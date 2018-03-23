@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <title>Music Store @yield('secondTitle')</title>
     <!-- Styles -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
@@ -15,7 +16,7 @@
             @guest
                 @else
         <li><a href="{{ url('/addMusic') }}">Ajouter une musique</li>
-                    <li><a href="#">Test</li>
+                    <!--<li><a href="{{ url('/addGenre') }}">Ajouter un produit</li>-->
             @endguest
         </ul>
         <ul class="navbar">

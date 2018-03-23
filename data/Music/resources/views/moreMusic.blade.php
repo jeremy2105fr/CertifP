@@ -17,8 +17,16 @@
         {{ Form::text('genre') }}
       </div>
       <div>
-        {{ Form::label('date', 'Date de sortie') }}
-        {{ Form::selectYear('date', 1920, 2018) }}
+        {{ Form::label('support', 'Support') }}
+        {{ Form::text('support') }}
+      </div>
+      <div>
+        {{ Form::label('date', 'Sortie') }}
+        {{ Form::selectYear('date', 1920, 2018, 2018, ['class' => 'field']) }}
+      </div>
+      <div>
+        {{ Form::label('stock', 'Stock') }}
+        {{ Form::selectRange('stock', -99, 99, 0, ['class' => 'field']) }}
       </div>
       <div>
         {{ Form::submit() }}

@@ -15,7 +15,17 @@ Auth::routes();
 
 Route::get('/', 'ActionController@showMusic');
 Route::get('/home', 'HomeController@index');
+
+
 Route::get('/addMusic', 'NavController@addMusic');
-Route::get('/updateMusic', 'NavController@updateMusic');
+Route::post('/upMusic', 'NavController@uMusic');
 
 Route::post('/addMusic', 'ActionController@newMusic');
+Route::post('/updateMusic', 'ActionController@musicUpdated');
+Route::post('/deleteMusic', 'ActionController@deleteMusic');
+
+
+
+/*Route::get('/addGenre', 'NavController@addGenre');
+
+Route::post('addGenre', 'ActionController@newGenre');*/

@@ -12,20 +12,26 @@ nav {
     height: 90px;
     width: 100%;
     background: black;
-    color: white;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     align-content: space-between;
+    background-image: url('../img/metal_font.jpg');
+    font-family: 'Lato', sans-serif;
+    border-bottom: 3px rgb(184, 36, 67) inset;
 }
 h1 {
-    color: rgb(29, 118, 255);
+    color: rgb(184, 36, 67);
+    width: 200px;
     margin-left: 20px;
+    font-size: 2em;
+    font-family: Impact, fantasy;
 
 }
 .barMidle {
-    width: 70%;
+    max-width: 70%;
 }
 .navbar {
     display: flex;
@@ -36,27 +42,81 @@ h1 {
     list-style: none;
 }
 .navbar li a{
-    color: white;
+    color: rgb(184, 36, 67);
     text-decoration: none;
 }
 .navbar li a:hover {
 
     margin-bottom: 2px;
-    border-bottom: 1px red solid;
+    border-bottom: 1px rgb(184, 36, 67) solid;
 }
 .content {
-    height: 740px;
+    height: 1000px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: baseline;
     align-content: center;
+    background-image: url('../img/music.jpg');
+
 
 }
-footer {
-    height: 80px;
-    width: 100%;
-    background: black;
 
+
+.hidden {
+  visibility: hidden;
+}
+
+table {
+  margin-top: 100px;
+  border-collapse: collapse;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+}
+table th {
+  font-size: 1.2em;
+}
+table td {
+  width: 80px;
+}
+table td, table th {
+  border: 2px rgb(15, 143, 231) solid;
+
+  padding-right: 5px;
+  text-align: center;
+}
+h2 {
+  color: white;
+}
+form {
+  color: white;
+  
+  display: flex;
+}
+form div {
+  width: 70px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+input, select {
+  color: white;
+  width: 80px;
+  background: rgb(28, 89, 192);
+  border-radius: 25px 25px 25px 25px;
+  text-align: center;
+}
+.mini {
+  width: 30px!important;
+}
+.mini input {
+  width: 25px;
+}
+.noBorder {
+    border: none;
+    padding-left: 15px;
 }
